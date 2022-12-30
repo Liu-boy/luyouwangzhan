@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/交通指南.css">
+</head>
+<body>
+<div class="box">
+    <div class="box1">
+        <ul>
+            <li class="a c"><a href="江西旅游网站.html" class="li1" target="_parent">网址首页</a>
+            </li>
+            <li class="a"><a href="">景点概览 <b class="s"></b></a>
+             <ul>
+                 <li><a href="庐山.html" target="_self">庐山</a></li>
+                 <!-- <li><a href="江西武功山.html"></a></li> -->
+                 <li><a href="井冈山.html" target="_self">井冈山</a></li>
+                 <li><a href="景德镇.html" target="_self">滕王阁</a></li>
+                 <!-- <li><a href="三清山.html" target="_self">三清山</a></li> -->
+                 <li><a href="">更多</a></li>
+             </ul>
+            </li>
+            <li class="a"><a href="">新闻中心<b class="s"></b></a>
+                <ul>
+                 <li><a href="">景区公告</a></li>
+                 <li><a href="">景区咨询</a></li>
+                 <li><a href="">精彩活动</a></li>
+             </ul>
+           </li>
+            <li class="a"><a href="">玩转景区 <b class="s"></b></a>
+                <ul>
+                 <li><a href="">舌尖美食</a></li>
+                 <li><a href="">交通指南</a></li>
+                 <li><a href="">酒店住宿</a></li>
+                 <li><a href="">地图导航</a></li>
+                 <li><a href="">周边景区</a></li>
+             </ul>
+            </li>
+            <li class="a"><a href="">电子商务 <b class="s"></b></a>
+                <ul>
+                 <li><a href="https://map.baidu.com/search/%E6%B1%9F%E8%A5%BF%E6%99%AF%E5%8C%BA%E9%85%92%E5%BA%97/@11590058.03426198,4489812.658417984,5z?querytype=s&contp=1&on_gel=1&wd=%E6%B1%9F%E8%A5%BF%E6%99%AF%E5%8C%BA%E9%85%92%E5%BA%97&c=1&sc=0&sfrom=map_pc&provider=pc-aladin&pn=0&device_ratio=2&da_src=shareurl" target="_self">酒店预订</a></li>
+                 <li><a href="http://www.mafengwo.cn/localdeals/0-0-15508-91-0-0-0-0.html" target="_self">门票预订</a></li>
+                 <li><a href="">团队预定</a></li>
+             </ul>
+         </li>
+            <li class="a"><a href="">服务中心 <b class="s"></b></a>
+                <ul>
+                 <li><a href="用户登入.html" target="_self">登入账号</a></li>
+                 <li><a href="">导游预约</a></li>
+                 <li><a href="https://www.xuexila.com/lvyougonglue/3958485.html" target="_self">旅游指南</a></li>
+                 <li><a href="">常见问题</a></li>
+                 <li><a href="">在线互动</a></li>
+             </ul>
+            </li>
+            <li class="a"><a href="">政务公开 <b class="s"></b></a>
+                <ul>
+                 <li><a href="">试点专栏</a></li>
+                 <li><a href="">政务咨询</a></li>
+                 <li><a href="">职能机构</a></li>
+                 <li><a href="">文明旅游</a></li>
+                 <li><a href="">提升亮点</a></li>
+             </ul>
+            </li>
+            <li class="a"><a href="" class="li">景区风光 <b class="s"></b></a>
+                <ul>
+                 <li><a href="主题视频.html">主题视频</a></li>
+                 <li><a href="主题图片.html">主题图片</a></li>
+                 <li><a href="">虚拟旅游</a></li>
+             </ul>
+           </li>
+        </ul>
+    </div>
+    <p>交通指南</p>
+    <h4>一山一水，一洞一涯，一石一峰都自成一格</h4>
+</div>
+<br><br>
+<h5 style="position: relative;left: 150px; ">首页><span style="color: blue;">交通指南</span></h5><br><br>
+<hr>
+<h1>交通指南</h1>
+<br>
+<br><br>
+<form action="">
+    <div class="bo"><input class="w" type="text" placeholder="您想去的地方"></div><div class="bo1" style="background-color:rgb(33, 33, 109);padding-top: 5px; color: white; width: 100px;height: 29px;float: left; "><a href="" style="text-decoration:none;font-size: large; color: white;padding-left: 30px;padding-top:50px;">搜索</a></div>
+</form>
+<script>
+    var inputs=document.getElementsByClassName('w')[0];
+    console.log(inputs)
+    inputs.onfocus=function(){
+        this.placeholder=''
+    }
+    inputs.onblur=function(){
+        this.placeholder='您想去的地方'
+    }
+    //二级菜单背景颜色更换
+
+    window.onscroll=function(){
+        var ul =document.getElementsByClassName('box1')[0];
+   if(window.pageYOffset>window.screen.availHeight)
+   {
+       ul.classList.add('bian')
+   }
+   else
+   {
+       ul.classList.remove('bian');
+   }
+}
+</script>
+<br><br>
+<h2>井冈山</h2>
+<br><br><br>
+<img src="./images/jtzj.jpg" alt="" style="margin-left:725px;">
+<p style="text-align: center;"><span style="font-size:large;">自驾</span></p>
+<div class="box2 box22"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">南昌——井冈山</span></div>走大广高速，泰井高速至井冈山下,全程约315千米。</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">广州方向——井冈山</span></div>由和平县入境江西，经定南县至泰和县转入泰井高速到达井冈山。约670千米。</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">武汉合肥方向——井冈山</span></div>由黄梅县入境江西，经九江市走福银高速经南昌市、吉安市到泰和县转入泰井高速直达井冈山。约690千米(武汉)，约750千米(合肥)。</div>
+<div class="box2 box22"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">福州方向——井冈山</span></div>由黎川县入境江西，经抚州市走福银高速经南昌市厚田转入樟吉高速经樟树市、吉安市由泰和县转入泰井高速直到井冈山。</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">杭州方向——井冈山</span></div>由常山县入境江西，经玉山县、上饶市走沪昆高速经过鹰潭市、樟树市、吉安市到泰和县转入泰井高速直达井冈山。约860千米。</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">长沙方向——井冈山</span></div>井睦高速公路连接湖南炎陵和井冈山， 起点位于井冈山厦坪镇，通过互通与泰井高速公路相连，终点位于湖南炎陵县沔渡镇与江西井冈山睦村乡交界处，全程用时约50 分钟。</div>
+<p style="clear:both;"></p>
+<img src="./images/jtzj1.jpg" alt="" style="margin-left:725px;">
+<p style="text-align: center;"><span style="font-size:large;">火车</span></p>
+<div style="width: 1260px;height: 200px; border: 1px solid black; margin-left: 100px;"><div style="background-color:rgb(220, 134, 29); width: 100%; height: 60px;"></div>
+井冈山目前只有一个客运火车站，东连京九线，西连京广线。有始发南昌、深圳、上海南、北京西的列车，除了一趟到北京始发的直达Z字头快车之外，其余均为K字头普快列车。
+井冈山现已有直达列车，可乘坐到井冈山市新城区，然后再坐半小时汽车就可以到达茨坪景区。北京、上海、广州、南京等地都已经开通了井冈山旅游专列，从这些地方出发到井冈山都很方便。
+地址：井冈山市厦坪镇山陂头内（新市区的东面）
+火车站到井冈山景区(茨坪)：井冈山火车站离茨坪36公里。井冈山火车站在“山下”，而风景区分布在“山上”，出站右手侧有（火车站-井冈山茨坪）的小巴，一个人8块。从茨坪到火车站早上班车6:40左右，最晚一班在18:30。每20分钟一班车；火车站前有很多黑车，鲜有正规出租车，一般到火车站所在新城区15元，找人拼车20/人元左右火车站至茨坪，一路路况很好，到达茨坪后沿革命烈士陵园径中国井冈山干部学院约步行25分钟可到井冈山游客服务中心。
+
+</div>
+<p style="clear: both;"></p>
+<img src="./images/jtzj2.jpg" alt="" style="margin-left:725px;">
+<p style="text-align: center;"><span style="font-size:large;">客车</span></p>
+<div style="width: 1260px;height: 200px; border: 1px solid black; margin-left: 100px;"><div style="background-color:rgb(220, 134, 29); width: 100%; height: 60px;"></div>
+井冈山汽车站在茨坪镇。茨坪是井冈山的中心，游览井冈山必到的地方。
+江西省南昌、吉安、泰和等地每天都有长途汽车开往井冈山，都可以通过赣粤高速、泰井高速直达井冈山市（茨坪）风景区，遂川方向也有长途汽车直达茨坪。另外，从赣州以及湖南长沙，可以分别通过遂川和宁冈等地进入井冈山。
+与部分城市里程：南昌352公里、吉安市131公里、赣州市181公里、泰和县110公里、遂川县88公里、距湖南省省会长沙市365公里、茶陵144公里、炎陵88公里。
+提示：茨坪汽车站询到赣州的大巴。54一人到达赣州。大约为3个多小时就可以到达。
+茨坪车站发往吉安方向的班车：在6:05-13:30期间，每隔20分钟发一个班次；在13:45-17:00期间，每隔10分钟发一个班次。
+茨坪车站电话：0796-6552210
+</div>
+<p style="clear: both;"></p>
+<img src="./images/jtzj3.jpg" alt="" style="margin-left:725px;">
+<p style="text-align: center;"><span style="font-size:large;">飞机</span></p>
+<div style="width: 1260px;height: 200px; border: 1px solid black; margin-left: 100px;"><div style="background-color:rgb(220, 134, 29); width: 100%; height: 60px;"><span style="color:white;font-size:large;">井冈山机场</span></div>
+井冈山机场距井冈山只有65公里、距中心城市吉安市只有30公里，距吉安副中心城市泰和县城只有15公里，距京九线泰和站(前身为井冈山站)12公里。井冈山机场已经开通西安、北京、上海、深圳、成都、厦门、广州等多条航线。
+</div>
+<p style="clear: both;"></p>
+
+<img src="./images/jtzj4.jpg" alt="" style="margin-left:725px;">
+<p style="text-align: center;"><span style="font-size:large;">景区公交</span></p>
+<div class="box2 box22"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">A线</span></div>总站——小井——龙潭——百竹园——黄洋界</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">B线</span></div>总站——大井（毛主席旧居）——水口（彩虹瀑）</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">C线</span></div>总站——主峰——井冈湖</div>
+<div class="box2 box22"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">杜鹃山专线</span></div>总站——五马朝天——杜鹃山索道口（行州、杜鹃山景区）</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">龙市景区专线</span></div>黄洋界——茅坪——象山庵——会师广场——龙江书院</div>
+<div class="box2"><div style="width:100%;height:60px;background-color:rgb(220, 134, 29);"><span style="color:white;font-size:large;">AB交叉线</span></div>龙潭——大井</div>
+<p style="clear:both;"></p>
+</body>
+</html>

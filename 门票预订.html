@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./css/门票预订.css">
+</head>
+<body>
+  <h1>门票预订</h1>
+  <br>
+  <form action="">
+      <div><input type="text" placeholder="地点/景点" class="input"><div class="box"><a href="">搜索</a></div></div>
+  </form>
+  <script>
+      var inputs=document.getElementsByClassName('input')[0];
+      console.log(inputs);
+      inputs.onfocus=function()
+      {
+          this.placeholder=''
+          this.style.border='2px solid red'
+      }
+      inputs.onblur=function()
+      {
+          this.placeholder='地点/景点'
+          this.style.border='2px solid gray'
+      }
+  </script>
+  <br><br>
+  <h5 style="position: relative;left: 150px; ">首页><span style="color: blue;">门票预订</span></h5><br><br>
+  <hr>
+  <h1>热门景点</h1>
+ <div class="">
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/mpyd.jpg); background-size: cover;" class="t"></div>
+     中国陶瓷城
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/mpyd1.jpg); background-size: cover;" class="t">
+    </div>
+    庐山风景名胜区
+</div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(images/mpyd2.jpg); background-size: cover;" class="t"></div>
+     白鹿洞书院
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/mpyd3.jpg); background-size: cover;" class="t"></div>
+井冈山
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/mpyd4.jpg); background-size: cover;" class="t"></div>
+     萍乡武功山风景区
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/mpyd5.jpg); background-size: cover;" class="t"></div>
+     井冈山革命博物馆
+    </div>
+ </div>
+</body>
+</html>

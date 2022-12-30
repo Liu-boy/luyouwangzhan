@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            background-image: url(./images/dr.png);
+        }
+        .box
+        {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .box>div:nth-child(1)
+        {
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            font-size: large;
+            font-style: italic;
+            color: white;
+        }
+        h4{
+            text-align: center;
+            color: white;
+        }
+        .box1
+        {
+            margin-left: 80px;
+            color: white;
+        }
+        .box2
+        {
+            margin-left: 95px;
+            color: white;
+        }
+        .box3
+        {
+            margin-left: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+<div>随风旅行</div>
+<h4>登入</h4>
+<form>
+    <div class="box1"><label for="">用户名:</label><input type="text" placeholder="手机号" id="username" pattern="\d{11}" title="必须输入11个数字"></div>
+    <br>
+    <div class="box2"><label for="">密码:</label><input type="password" id="password"  pattern="^[a-zA-Z]\w{2,7}" title="必须以字母开头，包含3~8个字符"></div>
+    <br>
+    <div class="box3"><button onclick="return checkValue()">提交</button><input type="reset" style="margin-left: 20px;"><a
+       href="用户注册.html"target="_self" style="margin-left:20px;color: white; background-color: gray;text-decoration: none;">用户注册</a></div>
+</form>
+    </div>
+    <script>
+        var inputs=document.getElementById('username')
+        inputs.onfocus=function(){
+            this.placeholder=''
+        }
+        inputs.onblur=function(){
+            this.placeholder='手机号'
+        }
+    </script>
+</body>
+</html>

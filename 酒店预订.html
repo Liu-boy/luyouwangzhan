@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/酒店预订.css">
+</head>
+<body>
+  <h1>酒店预订</h1>
+  <br>
+  <form action="">
+      <div><input type="text" placeholder="地点/酒店名" class="input"><div class="box"><a href="">搜索</a></div></div>
+  </form>
+  <script>
+      var inputs=document.getElementsByClassName('input')[0];
+      console.log(inputs);
+      inputs.onfocus=function()
+      {
+          this.placeholder=''
+          this.style.border='2px solid red'
+      }
+      inputs.onblur=function()
+      {
+          this.placeholder='地点/酒店名'
+          this.style.border='2px solid gray'
+      }
+  </script>
+  <br><br>
+  <h5 style="position: relative;left: 150px; ">首页><span style="color: blue;">酒店预订</span></h5><br><br>
+  <hr>
+  <h1>热门酒店</h1>
+ <div class="">
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/jdzjd.jpg); background-size: cover;" class="t"></div>
+     陶溪川创意广场 | 距市中心直线6.3公里
+     ¥310起
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/jdzjd1.jpg); background-size: cover;" class="t">
+    </div>
+    古窑民俗博览区 | 距市中心直线170米
+    ¥260起
+</div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(images/lsjd.jpg); background-size: cover;" class="t"></div>
+    
+  莫林酒店(庐山星天地店)
+   ¥210起
+
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/lsjd1.jpg); background-size: cover;" class="t"></div>
+     庐山观云山庄大酒店¥160起
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/jgsjd.jpg); background-size: cover;" class="t"></div>
+    
+井冈山凤凰商务酒店¥200起
+    </div>
+     <div class="box1"><div style="width: 300px;height:200px; background-image: url(./images/jgsjd1.jpg); background-size: cover;" class="t"></div>
+     井冈山丽景湾酒店¥210起
+    </div>
+ </div>
+</body>
+</html>

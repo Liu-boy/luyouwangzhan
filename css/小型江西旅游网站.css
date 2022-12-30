@@ -1,0 +1,397 @@
+*
+       {
+           padding: 0;
+           margin: 0;
+       }
+       body
+       {
+           overflow-x: hidden;
+       }
+       .box 
+       {
+           overflow: hidden;
+           height: 700px;
+           width: 1536px;
+       }
+       .box0>div
+       {
+           height: 700px;
+           width: 1536px;
+           float: left;
+       }
+       .box0{
+           width: 9999px;
+           height: 500px;
+           animation: tap 15s linear infinite;
+       }
+       .box0:hover
+       {
+           animation-play-state: paused;
+       }
+       @keyframes tap 
+       {
+           0%{transform: translate(0);}
+           5%{transform: translate(-1536px);}
+           25%{transform: translate(-1536px);}
+           28%{transform: translate(-3072px);}
+           50%{transform: translate(-3072px);}
+           53%{transform: translate(-4608px);}
+           75%{transform: translate(-4608px);}
+           78%{transform: translate(-6145px);}
+           100%{transform: translate(-6145px);}
+       }
+       .box0>div:nth-child(1)
+       {
+background-image: url(../images/jx1.jpg);
+background-color: aqua;
+background-size: cover;
+       }
+       .box0>div:nth-child(2)
+       {
+         background-image: url(../images/jx10.png);  
+         background-color: yellowgreen;
+         background-size: cover;
+       }
+       .box0>div:nth-child(3)
+       {
+          background-image: url(../images/jx5.png.png); 
+          background-color: yellow;
+          background-size: cover;
+       } 
+       .box0>div:nth-child(4)
+       {
+          background-image: url(../images/jx11.png); 
+          background-color: brown;
+          background-size: cover;
+       } 
+       .box0>div:nth-child(5)
+       {
+          background-image: url(../images/jx1.jpg); 
+          background-color: bisque;
+          background-size: cover;
+       } 
+
+/* 二级菜单部分css */
+.bian
+{
+    background-color: gray;
+}
+       .box1
+       {
+width: 1530px;
+height: 50px;
+/* background-color:rgba(3, 8, 3, 0.4); */
+position: fixed;
+z-index: 8;
+         top: 0;
+         left: 0;
+       }
+       .box1>ul
+       {
+         list-style: none;
+         text-align: center;
+         position: sticky;
+       }
+       .box1>ul>li
+       {
+          float: left;
+           line-height: 50px;
+       }
+       .box1>ul>li>a
+       {
+           text-decoration: none;
+           color: white;
+    font-size: 19px;
+    padding-right: 78px;
+       }
+       .box1>ul>li:hover
+       {
+           transform: translate(4px,4px);
+           transition:  all ease 0.5s;
+       }
+       .li
+       {
+         padding-right: 156px;  
+       }
+       .li1
+       {
+padding-left: 150px;
+       }
+       .box1>ul>li ul
+      { visibility:hidden;
+           color: white;
+           border: 1px solid rgba(8, 8, 8, 0);
+          position: absolute;
+          height: 100px;
+transform: translateY(50px);
+z-index: 2;
+       }
+       .box1>ul>li ul li
+       {
+        border: 1px solid rgb(8, 8, 8);
+        background-color: rgb(237, 243, 237);
+        width: 100px;
+        border: 1px solid rgba(0,0,0,0);
+       }
+       .box1>ul>li ul li a
+       {
+           text-decoration: none;
+           color: rgb(11, 12, 12);
+       }
+       .s
+        {
+            width: 0;
+            height: 0;
+            position: relative;
+            top: 18px;
+           border :8px solid rgba(13, 42, 84, 0);
+           border-top: 8px solid rgb(208, 217, 213);
+        }
+       .a:hover>ul
+       {
+           visibility: visible;
+           transform: translateY(0px);
+transition: all linear 0.4s;
+       }
+       .a ul li
+       {
+           list-style: none;
+       }
+       .a ul li a
+       {
+           text-decoration: none;
+       }
+       .b
+       {
+           padding: left 180px;
+       }
+       
+/* 动画区域css */
+.box2
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color:rgba(143, 141, 145, 0.3);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.box2>div
+{
+    width: 350px;
+    height: 40%;
+    background-color: white;
+    transform-style: preserve-3d;
+    font-size: 20px;
+}
+.box2>div img
+{
+margin-left: 38%;
+margin-top: 20px;
+}
+.box2>div h4{
+margin-left: 130px; ;
+}
+.box2>div a{
+    text-decoration: none;
+    color:rgb(11, 1, 1);
+    display: inline-block;
+    width: 100%;
+    /* font: bold 60px helvetica,arial,sans-serif;
+   text-shadow: 0 0 4px rgb(250, 247, 247),
+   0 -5px 4px #ff3,
+   2px 10px 6px #fd3,
+   -2px -15px 11px #f80,
+2px -25px 18px #f20
+   ; */
+}
+.box2>div:hover
+{
+    /* transform: rotateY(180deg) ; */
+    transform: translate(4px,4px);
+    transition:  all ease 0.8s;
+    background-color: rgba(43, 49, 49,0.5);
+}
+/* 热门景点css区域 */
+.box3
+{
+    width: 1530px;
+    height: 700px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    transition: all 500ms linear;
+}
+.box3 p
+{
+visibility: hidden;
+background-color:rgba(11, 11, 10, 0.5);
+transform: translateY(-1100px);
+width: 410px;
+    height: 500px;
+    overflow: hidden;
+color: white;
+font-size: smaller;
+white-space: pre-wrap;
+}
+.box3>div>div:hover p
+{
+    visibility: visible;
+    transform: translate(0px);
+    transition: all 0.8s ease-out;
+    z-index: 4;
+    position: relative;
+}
+.box3>div>div:hover
+{
+    transform:scale(1.1);
+    transition: all 0.5s linear;
+}
+.box3>div
+{
+    width: 99999px;
+    height: 800px;
+    background-color:white;
+    background-size: cover;
+    position: relative;
+    transition: all 500ms linear;
+}
+.box3>div>div
+{
+    height: 500px;
+    width: 410px;
+    margin: 50px;
+    float: left;
+    transition: all 500ms linear;
+}
+.box3 div>div:nth-child(4)
+{
+    background-image: url(../images/jx11.jpg);
+    background-repeat:no-repeat ;
+    background-position: cover;
+    cursor: pointer;
+    font-size: large;
+    background-size: cover;
+}
+.box3 div>div:nth-child(5)
+{
+
+    background-image: url(../images/jx8.jpg);
+    background-repeat:no-repeat ;
+    cursor: pointer;
+    font-size: large;
+    background-size: cover;
+}
+.box3 div>div:nth-child(6)
+{
+    background-image: url(../images/jx10.jpg);
+    background-repeat:no-repeat ;
+    cursor: pointer;
+    font-size: large;
+    background-size: cover;
+}
+.box3 div>div:nth-child(1)
+{
+    background-image: url(../images/jx5.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    cursor: pointer;
+    font-size: large;
+}
+.box3 div>div:nth-child(2)
+{
+    background-image: url(../images/jx6.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    cursor: pointer;
+    font-size: large;
+}
+.box3 div>div:nth-child(3)
+{
+    background-image: url(../images/jx7.png);
+    background-repeat:no-repeat ;
+    cursor: pointer;
+    font-size: large;
+    background-size: cover;
+}
+.box3 div>div:nth-child(7)
+{
+    background-image: url(../images/jx2.jpg);
+    background-repeat:no-repeat ;
+    cursor: pointer;
+    background-size: cover;
+}
+.p
+{
+    font-size: 40px;
+}
+.p>img:nth-child(2)
+{
+    transform: translateY(2px);
+}
+.box3 span
+{
+    display: none;
+    color: white;
+}
+.box3>div:hover>span
+{
+    display: block;
+}
+/* 交通指南css区域 */
+.box4
+{
+    width: 1530px;
+    height: 600px;
+}
+.box4>div
+{
+    width: 250px;
+    height: 450px;
+    margin: 50px 25px;
+    float: left;
+    border-radius: 20px;
+}
+.box4>div:hover
+{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}
+.box4>div:nth-child(1)
+{
+    background-color: antiquewhite;
+    background-image: url(../images/zj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box4>div:nth-child(2)
+{
+    background-color: rgb(196, 136, 57);
+    background-image: url(../images/hc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box4>div:nth-child(3)
+{
+    background-color: rgb(215, 217, 250);
+    background-image: url(../images/kc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box4>div:nth-child(4)
+{
+    background-color: rgb(107, 58, 212);
+    background-image: url(../images/fj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box4>div:nth-child(5)
+{
+    background-color: rgb(183, 67, 75);
+    background-image: url(../images/xngj.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
